@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.left-column {
+  flex: 1;
+  max-width: 580px;
+  padding-right: 32px;
+}
+
+.left-column h1 {
+  color: #1877f2;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.left-column p {
+  font-size: 28px;
+  line-height: 32px;
+  color: #1c1e21;
+}
+
+.right-column {
+  width: 396px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+input[type="submit"] {
+  background-color: #1877f2;
+  color: white;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #166fe5;
+}
+
+.forgotten-password {
+  text-align: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #dadde1;
+  margin-bottom: 20px;
+}
+
+.forgotten-password a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgotten-password a:hover {
+  text-decoration: underline;
+}
+
+.create-account-button {
+  background-color: #42b72a;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-account-button:hover {
+  background-color: #36a420;
+}
+
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .left-column {
+      padding-right: 0;
+      margin-bottom: 32px;
+  }
+
+  .right-column {
+      width: 100%;
+      max-width: 396px;
+  }
+}

